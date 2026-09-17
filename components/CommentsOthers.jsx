@@ -190,7 +190,7 @@ Kind words from {" "}
 {/* Comments Others */}
 
 
-<div className="max-w-3xl mx-auto">
+<div className="max-w-2xl mx-auto">
 
 <motion.div className="relative"
 

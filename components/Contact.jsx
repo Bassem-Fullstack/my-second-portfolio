@@ -311,7 +311,7 @@ viewport={ { once : true}}
   
   <a key={ index } href={item.href} target="blank" className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors duration-150 " >
 
-  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+  <div className="w-12 h-12 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center ">
 
 
   <item.icon className="text-primary w-5 h-5"/>
@@ -327,7 +327,7 @@ viewport={ { once : true}}
 
   </div> {/*  text-sm text-muted-foreground */}
 
-  <div className="font-medium">
+  <div className="font-medium break-all">
   
     {item.value}
 
