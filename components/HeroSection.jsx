@@ -443,7 +443,7 @@ viewport={ { once : true , amount : 0.3}}
 
 >
  
- <div className="flex animate-marquee"
+ <div className="flex animate-marquee w-max"
 
  
  > { [...skills , ...skills].map((skill , index) => (

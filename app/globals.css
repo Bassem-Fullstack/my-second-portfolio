@@ -220,7 +220,7 @@ backdrop-filter: blur(20px);
 
 .animate-marquee {
 
- animation: marquee 20s linear infinite ;
+ animation: marquee 40s linear infinite ;
 
 }
 

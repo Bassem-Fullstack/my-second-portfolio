@@ -22,7 +22,7 @@ export const TypewriterText = () => {
   })
 
   return (
-    <span className="font-serif italic text-primary leading-tight">
+    <span className="font-serif italic text-primary leading-tight whitespace-nowrap">
       {text}<Cursor />
     </span>
   )

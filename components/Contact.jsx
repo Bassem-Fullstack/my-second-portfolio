@@ -219,7 +219,7 @@ Have a project in mind ❓ I would love to hear about it <br/> Send me a message
 </motion.div> {/*  text-center max-w-3xl mx-auto mb-16   */}
 
 
-<div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+<div className="grid lg:grid-cols-2 grid-cols-1 gap-12 max-w-5xl mx-auto">
 
  <motion.div className="glass p-8 rounded-3xl border border-primary/30 h-fit"
  
