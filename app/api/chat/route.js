@@ -36,7 +36,7 @@ How to contact Bassem:
 
 - LinkedIn: [https://www.linkedin.com/in/bassem-ali-040b04356] 
 
-- WhatsApp : [https://wa.me/0201125567499]
+- WhatsApp : [https://api.whatsapp.com/send/?phone=0201125567499&text&type=phone_number&app_absent=0]
 
 
 Keep answers short, friendly, and professional. 
