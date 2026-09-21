@@ -13,13 +13,16 @@ import {Contact} from "../components/Contact"
 
 import {Certificates} from "../components/Certificates"
 
+import {Preloader} from "../components/Preloader"
 
 export default function Home() {
   return (
    <>
    
-   <HeroSection />
+   <Preloader />
 
+  <HeroSection />
+  
    <About />
 
    <Projects />

@@ -199,18 +199,30 @@ return (
 
         ))}
       
+{loading && (
 
-       {loading && (
+  <div className="mr-auto  p-3 rounded-xl flex items-center gap-1">
 
-              <div className="mr-auto bg-surface text-muted-foreground text-sm p-3 rounded-xl">
+    <span className="w-2 h-2 rounded-full bg-muted-foreground animate-bounce" />
 
-               Typing...
+    <span
+      className="w-2 h-2 rounded-full bg-muted-foreground animate-bounce"
+      style={{ animationDelay: "0.15s" }}
+    />
 
-              </div>
-            )}
+    <span
+      className="w-2 h-2 rounded-full bg-muted-foreground animate-bounce"
+      style={{ animationDelay: "0.3s" }}
+    />
+
+
+ {/* استخدمت انيمشين ديلي هنا عشان اخر كل واحدة ونقط كلهم ميطلعوش مع بعض وتبان سلسة وكدة كدة كلاس جاهز بتاع تاويلند لكن توقيت انيمشين مش موجود عشان كدة استخدمت ستايل */}
+
+  </div> // {/* mr-auto  p-3 rounded-xl flex items-center gap-1 */}
+
+ )}
         
        </div> {/* flex-1 overflow-y-auto p-3 space-y-3 */}
-
 
 
          <div className="p-4 border-t border-border flex items-center gap-3 ">
