@@ -360,7 +360,7 @@ Full-Stack Developer focused on building modern, responsive, and user-friendly w
 <div className=" relative glass rounded-3xl p-2 bg-gray-950  shadow-[0_0_20px]  shadow-primary/25">
 
 
-<Image alt="profile" width={700} height={716} src="/profile1.webp" className="w-full object-cover rounded-2xl"  priority  />
+<Image alt="profile" width={700} height={716} src="/profile1.png" className="w-full object-cover rounded-2xl" unoptimized priority  />
 
 
 
