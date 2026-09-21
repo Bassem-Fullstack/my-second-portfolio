@@ -145,7 +145,7 @@ return (
 {
  !isLeaving && (
 
-  <style>{`.animate-fade-in {animation-play-state : paused; !important }`}</style>
+  <style>{`.animate-fade-in {animation-play-state : paused !important; }`}</style>
   
 //  استخدمت ستايل مخصوص عشان اجمد انميشن بتاع هيرو سيكشن وقت ما صفحة تحميل تكون بتحمل
 
