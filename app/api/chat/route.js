@@ -74,7 +74,7 @@ return Response.json({ error : "Message is required" } , {status : 400} )
 
 
 
-const model = GenAI.getGenerativeModel({model : "gemini-3.5-flash-lite"})
+const model = GenAI.getGenerativeModel({model : "gemini-3.6-flash" })
 
 
 const result = await model.generateContent( 
@@ -87,27 +87,34 @@ const result = await model.generateContent(
 )
 
 
-const getText = result.response.text() 
+const text = result.response.text() 
 
-return Response.json({ getText })
+return Response.json({ text })
 
 } 
 
 
+catch (err) {
 
-catch(err) {
+  console.error("Gemini API error:", err)
 
- console.error("Gemini API error:", err)
-
+  if (err?.status === 503) {
     return Response.json(
-
-      { error: "Something went wrong. Please try again." },
-
-      { status: 500 }
-
+      {
+        error: "AI service is temporarily busy. Please try again."
+      },
+      { status: 503 }
     )
+  }
 
+  return Response.json(
+    {
+      error: "Something went wrong. Please try again."
+    },
+    { status: 500 }
+  )
 }
+
     
     
 }

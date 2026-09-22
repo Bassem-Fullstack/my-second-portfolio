@@ -96,17 +96,17 @@ body : JSON.stringify({message : trimmed})
 })
 
 
-const getDate = await res.json()
+const date = await res.json()
 
 
 if(!res.ok) {
 
-  throw new Error ( getDate.error || "Something went wrong" )
+  throw new Error ( date.error || "Something went wrong" )
 }
 
 
 
-setMessages((prev) => [...prev , {role : "bot" , text : getDate.getText}]) 
+setMessages((prev) => [...prev , {role : "bot" , text : date.text}]) 
 
 }
 
