@@ -16,6 +16,10 @@
 
 scrollbar-gutter: stable; 
 
+scrollbar-color: rgb(var(--color-primary)) rgb(var(--color-background));
+
+
+
 /* background-color: rgb(15 20 24 / 0.2); */ /* دة قيم اللى انا كتبها بالارقاهم دة بيتدل على ارجيبي */
  /* متغيرات الألوان */
 
