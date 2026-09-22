@@ -74,17 +74,10 @@ return Response.json({ error : "Message is required" } , {status : 400} )
 
 
 
-const model = GenAI.getGenerativeModel({model : "gemini-3.6-flash" })
+const model = GenAI.getGenerativeModel({model : "gemini-3.5-flash-lite" , systemInstruction : systemContext })
 
 
-const result = await model.generateContent( 
-
-   ` ${systemContext}\n\nVisitor question : ${message} ` 
-
-
-// ` ${systemContext}\n\nVisitor question : ${message} ` n\n دة بنعملوة عشان الغباء اصطناعي يعرف يفرق مابين تعليمات واسألة مستخدم واجابات مجرد مسافات بنعملها عشان اجابات تبان بشكل منطقي وحلو ولاصطناعي ميتخلطبش 
-
-)
+const result = await model.generateContent( message )
 
 
 const text = result.response.text() 
