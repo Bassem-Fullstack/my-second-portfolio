@@ -155,7 +155,7 @@ setMounted(true)
 
 return (
 
-<section id="home" className="relative min-h-scren flex flex-col z-40 items-center  overflow-hidden ">
+<section id="home" className="relative flex flex-col z-40 items-center  overflow-hidden ">
 
 
 {/* bg-image */}
@@ -412,7 +412,7 @@ Full-Stack Developer focused on building modern, responsive, and user-friendly w
 
 <div className="mt-20">
  
- <motion.p className="text-[17px] italic animate-fade-in [animation-delay:400ms] text-center text-muted-foreground tracking-wider mb-5"
+ <motion.p className="text-[17px] italic  text-center text-muted-foreground tracking-wider mb-5"
  
 initial = {{ opacity : 0 , y:85 , filter :"blur(10px)"}}
 

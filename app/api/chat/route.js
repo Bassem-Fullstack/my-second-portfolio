@@ -36,7 +36,7 @@ How to contact Bassem:
 
 - LinkedIn: [https://www.linkedin.com/in/bassem-ali-040b04356] 
 
-- WhatsApp : [https://wa.me/0201125567499]
+- WhatsApp : [https://api.whatsapp.com/send/?phone=0201125567499&text&type=phone_number&app_absent=0]
 
 
 Keep answers short, friendly, and professional. 
@@ -74,40 +74,40 @@ return Response.json({ error : "Message is required" } , {status : 400} )
 
 
 
-const model = GenAI.getGenerativeModel({model : "gemini-3.5-flash-lite"})
+const model = GenAI.getGenerativeModel({model : "gemini-3.5-flash-lite" , systemInstruction : systemContext })
 
 
-const result = await model.generateContent( 
-
-   ` ${systemContext}\n\nVisitor question : ${message} ` 
+const result = await model.generateContent( message )
 
 
-// ` ${systemContext}\n\nVisitor question : ${message} ` n\n دة بنعملوة عشان الغباء اصطناعي يعرف يفرق مابين تعليمات واسألة مستخدم واجابات مجرد مسافات بنعملها عشان اجابات تبان بشكل منطقي وحلو ولاصطناعي ميتخلطبش 
+const text = result.response.text() 
 
-)
-
-
-const getText = result.response.text() 
-
-return Response.json({ getText })
+return Response.json({ text })
 
 } 
 
 
+catch (err) {
 
-catch(err) {
+  console.error("Gemini API error:", err)
 
- console.error("Gemini API error:", err)
-
+  if (err?.status === 503) {
     return Response.json(
-
-      { error: "Something went wrong. Please try again." },
-
-      { status: 500 }
-
+      {
+        error: "AI service is temporarily busy. Please try again."
+      },
+      { status: 503 }
     )
+  }
 
+  return Response.json(
+    {
+      error: "Something went wrong. Please try again."
+    },
+    { status: 500 }
+  )
 }
+
     
     
 }
