@@ -30,9 +30,9 @@ import { FaGithub } from "react-icons/fa6";
      
     tags : ["Next.js" , "Redux Toolkit" , "MongoDB" , "JWT" , "Tailwind CSS" ] ,
 
-    code : "https://github.com/Bassem-Fullstack/Coffe-Store-FrontEnd.git" ,
+    code : "https://github.com/Bassem-Fullstack/coffe-store-frontend-only.git" ,
 
-    demo : "https://coffe-store-front-end.vercel.app"
+    demo : "https://coffe-store-frontend-only.vercel.app"
 
 },
 
